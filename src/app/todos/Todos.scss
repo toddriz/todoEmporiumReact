@@ -1,0 +1,9 @@
+.todo-lists {
+    display: flex;
+    flex-direction: column;
+
+    .todos {
+        display: flex;
+        flex-direction: column;
+    }
+}

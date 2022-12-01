@@ -1,0 +1,83 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 1px 1px 4px rgba(112, 128, 144, 0.623);
+
+    .status {
+        font-weight: 600;
+
+        &.completed {
+            color: #5ba4cf;
+        }
+
+        &.pending {
+            color: #ef7564;
+        }
+    }
+
+    .todo-header {
+        display: flex;
+        justify-content: space-between;
+
+        .description {
+            display: flex;
+            color: slategray;
+            margin-bottom: 8px;
+        }
+
+        .user-select {
+            .user-label {
+                color: slategray;
+                margin-right: 4px;
+                font-weight: 600;
+            }
+
+            select {
+                border: none;
+                border-bottom: solid 1px slategray;
+            }
+        }
+    }
+
+    .description-textarea {
+        background-color: lightgray;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .button-container {
+        margin: 8px 0;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            border: none;
+            background-color: slategray;
+            box-shadow: 2px 2px 4px rgba(112, 128, 144, 0.623);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+
+            label {
+                color: slategray;
+            }
+
+            input {
+                margin-top: 4px;
+            }
+        }
+    }
+}
